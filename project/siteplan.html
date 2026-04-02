@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Smart Used Car Buying Guide</title>
+  <meta name="description" content="Website planning document for Smart Used Car Buying Guide project.">
+  <meta name="author" content="Jose Bejarano">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #1d3557;
+      --secondary-color: #e63946;
+      --accent-color: #f1faee;
+      --text-color: #222222;
+      --card-color: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 90px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    h1, h2, h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    section {
+      background-color: var(--card-color);
+      margin: 1rem 0;
+      padding: 1.25rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .color-box {
+      display: inline-block;
+      width: 120px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+    }
+
+    .wireframe {
+      border: 2px solid var(--primary-color);
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: #fafafa;
+    }
+
+    .box {
+      border: 1px solid #555;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .desktop-layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743922.png" alt="Car logo">
+    <h1>Site Plan</h1>
+    <p>Smart Used Car Buying Guide</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Smart Used Car Buying Guide</strong></p>
+      <p>
+        I chose this name because the website is focused on helping users make smart and safe decisions
+        when buying a used car. The title is clear, practical, and directly connected to the purpose of the site.
+      </p>
+      <p><strong>Optional domain availability:</strong> smartusedcarbuyingguide.com</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        The purpose of this website is to help people inspect, compare, and safely purchase used cars.
+        The site will provide useful information such as a checklist for car inspections, common mechanical
+        problems, negotiation tips, and a simple calculator to estimate costs.
+      </p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>What should I inspect before buying a used car from a private seller?</li>
+        <li>How can I know if the used car price is fair?</li>
+        <li>What common problems should I check before making a final decision?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <p>
+        The website will use the following colors:
+      </p>
+      <ul>
+        <li>
+          <span class="color-box" style="background-color: #1d3557;"></span>
+          <strong>#1D3557</strong> - Used for headings, header, footer, and important sections.
+        </li>
+        <li>
+          <span class="color-box" style="background-color: #e63946;"></span>
+          <strong>#E63946</strong> - Used for accents, buttons, highlights, and emphasis.
+        </li>
+        <li>
+          <span class="color-box" style="background-color: #f1faee;"></span>
+          <strong>#F1FAEE</strong> - Used for the page background and a clean visual style.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <ul>
+        <li><strong>Montserrat</strong> - Used for headings and section titles.</li>
+        <li><strong>Roboto</strong> - Used for body text and general content.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Wireframes</h2>
+
+      <h3>Mobile View</h3>
+      <div class="wireframe">
+        <div class="box">Header / Logo</div>
+        <div class="box">Navigation Menu</div>
+        <div class="box">Hero Section</div>
+        <div class="box">Inspection Checklist</div>
+        <div class="box">Common Problems</div>
+        <div class="box">Cost Calculator</div>
+        <div class="box">Footer</div>
+      </div>
+
+      <h3>Desktop View</h3>
+      <div class="wireframe">
+        <div class="box">Header / Logo / Navigation</div>
+        <div class="desktop-layout">
+          <div>
+            <div class="box">Sidebar / Quick Tips</div>
+          </div>
+          <div>
+            <div class="box">Hero Section</div>
+            <div class="box">Inspection Checklist</div>
+            <div class="box">Common Problems</div>
+            <div class="box">Cost Calculator</div>
+          </div>
+        </div>
+        <div class="box">Footer</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jose Bejarano | WDD131 Project Site Plan</p>
+  </footer>
+</body>
+</html>
