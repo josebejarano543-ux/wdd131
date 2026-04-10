@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cost Calculator | Smart Used Car Buying Guide</title>
+  <meta name="description" content="Calculate the real cost of buying and owning a used car.">
+  <meta name="author" content="Jose Alfredo Bejarano Barroso">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Smart Used Car Buying Guide</h1>
+    </div>
+    <button id="menu-button" aria-label="Open navigation menu">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="tips.html">Inspection Tips</a>
+      <a href="calculator.html">Cost Calculator</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+ <main>
+  <section class="page-hero">
+    <div class="page-hero-copy">
+      <p class="hero-tag">Ownership Cost Calculator</p>
+      <h2>Estimate the True Cost Before You Commit</h2>
+      <p>
+        A used car may seem affordable at first, but taxes, registration,
+        insurance, fuel, and maintenance all affect your real budget.
+      </p>
+    </div>
+  </section>
+
+  <section class="calculator-layout">
+    <div class="form-section premium-panel">
+      <h3>Enter Vehicle Information</h3>
+      <form id="car-form">
+        <label for="carModel">Car Model</label>
+        <input type="text" id="carModel" name="carModel" required>
+
+        <label for="price">Purchase Price ($)</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="tax">Tax and Fees ($)</label>
+        <input type="number" id="tax" name="tax" required>
+
+        <label for="registration">Registration Cost ($)</label>
+        <input type="number" id="registration" name="registration" required>
+
+        <label for="insurance">Monthly Insurance ($)</label>
+        <input type="number" id="insurance" name="insurance" required>
+
+        <label for="fuel">Monthly Fuel ($)</label>
+        <input type="number" id="fuel" name="fuel" required>
+
+        <label for="maintenance">Monthly Maintenance ($)</label>
+        <input type="number" id="maintenance" name="maintenance" required>
+
+        <button type="submit">Calculate Cost</button>
+      </form>
+    </div>
+
+    <div class="calculator-side">
+      <section class="result-section premium-panel">
+        <h3>Calculation Result</h3>
+        <div id="result"></div>
+      </section>
+
+      <section class="saved-section premium-panel">
+        <h3>Last Saved Estimate</h3>
+        <div id="saved-result"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="feature-grid">
+    <article class="feature-card">
+      <h3>Initial Cost</h3>
+      <p>The initial cost includes purchase price, tax, and registration fees.</p>
+    </article>
+
+    <article class="feature-card">
+      <h3>Monthly Cost</h3>
+      <p>Insurance, fuel, and maintenance help you understand the real monthly budget.</p>
+    </article>
+
+    <article class="feature-card">
+      <h3>Smarter Planning</h3>
+      <p>A lower sale price does not always mean a lower total cost of ownership.</p>
+    </article>
+  </section>
+</main>
+  <footer>
+    <p>&copy; <span id="year"></span> Smart Used Car Buying Guide | Jose Alfredo Bejarano Barroso</p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>
