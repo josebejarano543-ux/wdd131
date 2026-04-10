@@ -68,27 +68,25 @@ header {
   transform: scale(1.03);
 }
 
-nav {
+#nav-menu {
   display: none;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1rem;
 }
 
-nav.open {
+#nav-menu.open {
   display: flex;
 }
 
-nav a {
+#nav-menu a {
   color: var(--light-color);
   text-decoration: none;
   font-weight: 700;
-  padding: 0.35rem 0;
+  padding: 0.5rem 0;
   position: relative;
   transition: opacity 0.3s ease;
 }
 
-nav a:hover {
+#nav-menu a:hover {
   opacity: 0.85;
 }
 
@@ -794,5 +792,31 @@ nav a.active-link::after {
 @media (min-width: 768px) {
   .references-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+#nav-menu {
+  display: none !important;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+#nav-menu.open {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  #nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
   }
 }
